@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="chatbot">
+      <div class="chatbot-header">Chatbot</div>
+      <div class="chatbot-box">
+        <div class="chatbot-messages"></div>
+      </div>
+      <form class="chatbot-form" autocomplete="off">
+        <input
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Type a message..."
+          class="chatbot-input"
+        />
+        <button type="submit" class="chatbot-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="send-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <script src="src/learn.js"></script>
+    <script src="src/template.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
